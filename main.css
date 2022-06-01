@@ -4,6 +4,83 @@
     color: black;
     font-family: 'lato';
     overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(44, 44, 44);
+}
+
+@font-face {
+    font-family: "Baloo-Regular";
+    src: url(/fonts/Baloo-Regular.ttf);
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background:rgb(44, 44, 44);
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+
+.menu {
+    color:white;
+    font-size:25px;
+    margin:20px;
+}
+
+.homeButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    border-style: none;
+    padding: 20px;
+    background: #f4ce00;
+    box-shadow: rgb(240 204 46 / 40%) 0px 5px, rgb(240 221 46 / 30%) 0px 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size:20px;
+    color:white;
+}
+
+
+.title {
+    font-size: 30px;
+    font-family: "Baloo-Regular", sans-serif;
+    color: #fff;
+    margin: 0px 0px 20px 20px;
+    padding: 20px;
+    background:#f4ce00;
+    box-shadow: rgba(240, 204, 46, 0.4) 0px 5px, rgba(240, 221, 46, 0.3) 0px 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.whiteText {
+    font-size:25px;
+    color:#fff;
+}
+
+.welcomeTitle {
+    text-shadow:rgb(240 204 46 / 40%) 0px 7px, rgb(240 221 46 / 30%) 0px 10px;
+    font-size:80px;
+    color:white;
+    font-family: "Baloo-Regular", sans-serif;
+    MARGIN-top:100px;
+}
+
+.banner {
+    background-color: yellow;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 a:-webkit-any-link {
@@ -14,10 +91,6 @@ a:-webkit-any-link {
     background-color: rgb(81, 176, 231);
 }
 
-body {
-    margin: 70px;
-    background-color: #A1C6E3;
-}
 
 @font-face {
     font-family: "";
@@ -51,4 +124,4 @@ body {
 }
 
 
-    @media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {}
