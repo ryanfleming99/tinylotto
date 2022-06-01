@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'lato';
+    overflow-x: hidden;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.hover-color {
+    background-color: rgb(81, 176, 231);
+}
+
+body {
+    margin: 70px;
+    background-color: #A1C6E3;
+}
+
+@font-face {
+    font-family: "";
+    src: url(/fonts/.ttf);
+}
+
+.display-none {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* IPAD STYLING */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* MOBILE STYLING */
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        margin: 0px !important;
+        overflow-x: hidden;
+    }
+}
+
+
+    @media only screen and (max-width: 600px) {}
