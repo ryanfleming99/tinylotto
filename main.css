@@ -73,6 +73,59 @@ section {
     text-align: right; }
 
 
+    .signUpSection {
+        display: flex;
+    justify-content: center;
+    }
+
+    .signUpForm {
+        width: 60vw;
+        height: auto;
+        background: #777af5;
+        border-radius: 10px;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
+        margin-top: 30px;
+    }
+
+    .emailInput {
+        height: 5vh;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 0px 10px;
+        margin-right: 10px;
+    }
+
+    .signUpForm label {
+        color: white;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .signUpButton {
+        border: none;
+        background: white;
+        width: 10vw;
+        border-radius: 10px;
+        height: 5vh;
+        pointer-events: none;
+    }
+
+    .signUpForm input[type=text] {
+        color: #4c4c4c40;
+        pointer-events: none;
+    }
+
+    .signUpForm input[type=text]:focus-visible {
+        border: none;
+        background: #dcbbfa;
+        color: white;
+    }
+
+
 .homeButton {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -182,6 +235,35 @@ a:-webkit-any-link {
             background-repeat: no-repeat;
             height: 100vh;
             width: 100vw;
+        }
+
+        .signUpForm {
+            width: 100vw;
+            height: auto;
+            background: #777af5;
+            border-radius: 10px;
+            display: block;
+            /* margin-top: 30px; */
+        }
+
+        .signUpButton {
+            width:50vw;
+        }
+
+        .emailInput {
+            margin-top: 10px;
+        }
+
+        .welcomeTitle {
+            margin:0px;
+        }
+
+        .signUpForm label {
+            padding:0px;
+        }
+
+        .signUpForm input[type=text] {
+            text-align:center;
         }
 }
 
