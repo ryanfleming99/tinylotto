@@ -8,7 +8,23 @@
 }
 
 body {
-    background:rgb(44, 44, 44);
+    background:rgb(60, 158, 214);
+}
+
+.index {
+    background-image: url(/images/background-purple.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.homepage {
+    background-image: url(/images/background-pink-desktop.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 
 @font-face {
@@ -21,7 +37,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background:rgb(44, 44, 44);
 }
 
 section {
@@ -32,10 +47,31 @@ section {
 }
 
 .menu {
-    color:white;
-    font-size:25px;
-    margin:20px;
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    width: 5vw;
+    height: 6vh;
+    background: #777af5;
+    border: none;
+    border-radius: 10px; }
+
+.menu-options .off {
+    display:none;
 }
+
+.menu-options .newStyle {
+    display:block;
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    height: auto;
+    z-index: 9999999;
+    text-align: right; }
+
 
 .homeButton {
     -webkit-appearance: button;
@@ -45,8 +81,8 @@ section {
     color: initial;
     border-style: none;
     padding: 20px;
-    background: #f4ce00;
-    box-shadow: rgb(240 204 46 / 40%) 0px 5px, rgb(240 221 46 / 30%) 0px 10px;
+    background: #777af5;
+    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
     margin: 20px;
     border-radius: 10px;
     font-size:20px;
@@ -60,8 +96,8 @@ section {
     color: #fff;
     margin: 0px 0px 20px 20px;
     padding: 20px;
-    background:#f4ce00;
-    box-shadow: rgba(240, 204, 46, 0.4) 0px 5px, rgba(240, 221, 46, 0.3) 0px 10px;
+    background: #777af5;
+    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -71,7 +107,7 @@ section {
 }
 
 .welcomeTitle {
-    text-shadow:rgb(240 204 46 / 40%) 0px 7px, rgb(240 221 46 / 30%) 0px 10px;
+    text-shadow:rgb(46 59 240 / 62%) 0px 7px, rgb(255 255 255 / 50%) 0px 10px;
     font-size:80px;
     color:white;
     font-family: "Baloo-Regular", sans-serif;
@@ -97,7 +133,7 @@ a:-webkit-any-link {
     src: url(/fonts/.ttf);
 }
 
-.display-none {
+.displayNone {
     display: none;
 }
 
@@ -121,6 +157,32 @@ a:-webkit-any-link {
         margin: 0px !important;
         overflow-x: hidden;
     }
+
+    .index {
+        background-image: url(/images/backgroundPurple-mobile.gif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu {
+        color: white;
+        font-size: 25px;
+        margin: 20px;
+        width: 15vw;
+        height: 7vh;
+        background: #777af5;
+        border: none;
+        border-radius: 10px; }
+
+        .homepage {
+            background-image: url(/images/background-pink.gif);
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+        }
 }
 
 
