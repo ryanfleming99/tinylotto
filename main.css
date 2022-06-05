@@ -20,11 +20,55 @@ body {
 }
 
 .homepage {
-    background-image: url(/images/background-pink-desktop.gif);
+    /* background-image: url(/images/homepage-background.webp); */
+    background-color: #e7cbfd;
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+}
+
+.card-container {
+    display: inline-block;
+    width: 80vw;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: auto;
+}
+
+.card {
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.cardImage {
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity:0.5;
+    filter:blur(2px)
+}
+
+.cardTitle {
+    font-family: "Baloo-Regular", sans-serif;
+    font-size:20px;
+    padding: 20px 0;
+}
+
+.homepageTitle {
+    font-size: 30px;
+    font-family: "Baloo-Regular", sans-serif;
+    color: #fff;
+    margin: 0px 0px 20px 20px;
+    padding: 20px;
+    background: #777af5;
+    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 @font-face {
