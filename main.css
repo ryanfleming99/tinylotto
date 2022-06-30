@@ -90,6 +90,7 @@ section {
     text-align: center;
 }
 
+
 .menu {
     color: white;
     font-size: 25px;
@@ -104,6 +105,13 @@ section {
     display:none;
 }
 
+.leftMenuSection {background:#858fc9;
+width:40vw; height:100vh;}
+
+.left-menu {
+padding:20px;
+}
+
 .menu-options .newStyle {
     display:block;
     width: 100px;
@@ -116,6 +124,11 @@ section {
     z-index: 9999999;
     text-align: right; }
 
+.left-menu {
+    width: 100%;
+    display:flex;
+    background:white;
+}
 
     .signUpSection {
         display: flex;
