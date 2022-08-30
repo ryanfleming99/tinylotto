@@ -13,36 +13,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/34f56d6676.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <link rel="script" href="addClass.js" defer>
-
+    <script rel="script" src="/functions.js"></script>
 </head>
 
-<body class="index">
-    <!--[if lt IE 7]>
+<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header>
-        <div class="title">TL</div>
-        <button onclick="addClass()" class="menu" id="menu">[=]</button>
-    </header>
+<header>
+    <div class="titleBox mobNone" id="titleBox">
+        <h2 class="title">Welcome!</h2>
+    </div>
+
+    <div class="menu-container" id="menu-container">
+        <a href="/index.html" class="menu-item"><i class="fas fa-house-user"></i></a>
+        <a href="/homepage.html" class="menu-item"><i class="fas fa-paint-brush"></i></a>
+        <a href="/dashboard.html" class="menu-item"><i class="fas fa-layer-group"></i></a>
+        <a href="/support.html" class="menu-item"><i class="fas fa-headset"></i></a>
+        <a href="/profile.html" class="menu-item"><i class="fas fa-id-card"></i></a>
+    </div>
+
+    <button class="titleBox" onclick="switchMenu()" id="menu">
+        <p class="menuIcon" id="menuText">Menu</p>
+    </button>
+</header>
+
+<body class="index">
+    <section></section>
     <section>
-        <p class="welcomeTitle">TINY LOTTO</p>
+        <div class="centerSection">
+            <h1 class="welcomeTitle">TINY LOTTO</h1><br>
+            <p class="white">Welcome to the world of tiny lotto, a place where heroes rule. Trade, buy and collect NFT
+                cards. You’ll never
+                get bored as each card is unique and different from the last.</p><br>
+            <a href="/homepage.html"><button class="homeButton">Let's Go!<i
+                        class="fas fa-arrow-right white textAlign"></i>
+                </button></a>
+        </div>
     </section>
-    <section>
-        <!--  /homepage.html */-->
+    <!--  /homepage.html */-->
 
-        <a href="/homepage.html"><button class="homeButton">Concept Design <i style="margin: -5px 5px;"
-                    class="fas fa-arrow-right white"></i></button></a>
-
-    </section>
-
-    <section class="signUpSection">
+    <!-- <section class="signUpSection">
         <form class="signUpForm" action="/action_page.php">
             <label for="Email">Email:</label><br>
             <input class="emailInput" type="text" id="lname" name="lname" value="Sign up available soon!"><br><br>
             <input class="signUpButton" type="submit" value="SUBMIT">
         </form>
-    </section>
+    </section> -->
 </body>
 
 </html>
