@@ -4,40 +4,45 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <link rel="script" href="app.js">
-    </head>
-    <body class="index">
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/34f56d6676.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="script" href="addClass.js" defer>
+
+</head>
+
+<body class="index">
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <div class="title">TL</div>
-            <button class="menu">[=]</button>
-        </header>
-        <section>
-           <p class="welcomeTitle">TINY LOTTO</p>
-        </section>
-        <section>
-            <!--  /homepage.html */--> 
-                <form action="">
-                    <input class="homeButton" type="submit" value="COMING SOON" />
-                </form>
-             </section>
+    <header>
+        <div class="title">TL</div>
+        <button onclick="addClass()" class="menu" id="menu">[=]</button>
+    </header>
+    <section>
+        <p class="welcomeTitle">TINY LOTTO</p>
+    </section>
+    <section>
+        <!--  /homepage.html */-->
 
-             <section class="signUpSection">
-                    <form  class="signUpForm" action="/action_page.php">
-                        <label for="Email">Email:</label><br>
-                        <input class="emailInput" type="text" id="lname" name="lname" value="Sign up available soon!"><br><br>
-                        <input class="signUpButton" type="submit" value="SUBMIT">
-                      </form> 
-             </section>
-        <script src="" async defer></script>
-    </body>
+        <a href="/homepage.html"><button class="homeButton">Concept Design <i style="margin: -5px 5px;"
+                    class="fas fa-arrow-right white"></i></button></a>
+
+    </section>
+
+    <section class="signUpSection">
+        <form class="signUpForm" action="/action_page.php">
+            <label for="Email">Email:</label><br>
+            <input class="emailInput" type="text" id="lname" name="lname" value="Sign up available soon!"><br><br>
+            <input class="signUpButton" type="submit" value="SUBMIT">
+        </form>
+    </section>
+</body>
+
 </html>

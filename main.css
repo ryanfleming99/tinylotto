@@ -8,12 +8,175 @@
 }
 
 body {
-    background:rgb(60, 158, 214);
+    background: rgb(60, 158, 214);
+}
+
+h1 {
+    font-family: "Baloo-Regular", sans-serif;
+    font-size: 52px;
+}
+
+h2 {
+    font-family: "Baloo-Regular", sans-serif;
+    font-size: 42px;
+}
+
+.white {
+    color: #fff;
+}
+
+header,
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 90px;
+    background: #777af5;
+    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+}
+
+.menu {
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    width: 5vw;
+    max-height: 100px;
+    background: #777af5;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu-options .off {
+    display: none;
+}
+
+.menu-options .newStyle {
+    display: block;
+    width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    height: auto;
+    z-index: 9999999;
+    text-align: right;
+}
+
+div#menu-container {
+    display: none;
+    justify-content: space-evenly;
+    background: #777af5;
+    padding: 20px;
+}
+
+
+i {
+    padding: 10px;
+    justify-content: center;
+    font-family: "Font Awesome 5 Free", "FontAwesome";
+    font-size: 25px;
+    font-style: normal;
+    color: #fff;
+}
+
+i:hover {
+    font-size: 22px;
+    color: black;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right
+}
+
+.center {
+    text-align: center;
+}
+
+.sml-img {
+
+    width: 25vw;
+    text-align: center;
+}
+
+.med-img {
+
+    width: 50vw;
+    text-align: center;
+}
+
+.pad-100 {
+    padding: 80px;
+}
+
+.pad-50 {
+    padding: 30px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-left {
+    padding-left: 80px;
+}
+
+.pad-right {
+    padding-right: 80px;
+}
+
+.lrg-img {
+    width: 80vw;
+    text-align: center;
+}
+
+.whitesmoke {
+    background-color: #f5f5f5;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+    flex: 5;
+}
+
+input,
+button,
+submit {
+    border: none;
+}
+
+.lowOpacity {
+    opacity: 0.2;
+}
+
+.closeButton {
+    background: none;
+    font-size: 20px;
 }
 
 .index {
     background-image: url(/images/background-purple.gif);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -22,11 +185,27 @@ body {
 .homepage {
     /* background-image: url(/images/homepage-background.webp); */
     background-color: #e7cbfd;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
 }
+
+.titleBox {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    border-style: none;
+    padding: 20px 15px;
+    flex: 1;
+    background: #777af5;
+}
+
+
+
+
 
 .card-container {
     display: inline-block;
@@ -46,17 +225,17 @@ body {
 }
 
 .cardImage {
-    width:100%;
-    height:auto;
-    border-radius:10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    opacity:0.5;
-    filter:blur(2px)
+    opacity: 0.5;
+    filter: blur(2px)
 }
 
 .cardTitle {
     font-family: "Baloo-Regular", sans-serif;
-    font-size:20px;
+    font-size: 20px;
     padding: 20px 0;
 }
 
@@ -64,11 +243,6 @@ body {
     font-size: 30px;
     font-family: "Baloo-Regular", sans-serif;
     color: #fff;
-    margin: 0px 0px 20px 20px;
-    padding: 20px;
-    background: #777af5;
-    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
-    border-radius: 0px 0px 15px 15px;
 }
 
 @font-face {
@@ -76,98 +250,57 @@ body {
     src: url(/fonts/Baloo-Regular.ttf);
 }
 
-
-header {
-    width: 100%;
+.signUpSection {
     display: flex;
-    justify-content: space-between;
-}
-
-section {
-    width: 100%;
-    padding: 20px;
-    height: auto;
-    text-align: center;
-}
-
-.menu {
-    color: white;
-    font-size: 25px;
-    margin: 20px;
-    width: 5vw;
-    height: 6vh;
-    background: #777af5;
-    border: none;
-    border-radius: 10px; }
-
-.menu-options .off {
-    display:none;
-}
-
-.menu-options .newStyle {
-    display:block;
-    width: 100px;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid purple;
-    border-radius: 10px;
-    height: auto;
-    z-index: 9999999;
-    text-align: right; }
-
-
-    .signUpSection {
-        display: flex;
     justify-content: center;
-    }
+}
 
-    .signUpForm {
-        width: 60vw;
-        height: auto;
-        background: #777af5;
-        border-radius: 10px;
-        display: flex;
-        padding: 20px;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
-        margin-top: 30px;
-    }
+.signUpForm {
+    width: 60vw;
+    height: auto;
+    background: #777af5;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
+    margin-top: 30px;
+}
 
-    .emailInput {
-        height: 5vh;
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        padding: 0px 10px;
-        margin-right: 10px;
-    }
+.emailInput {
+    min-height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
 
-    .signUpForm label {
-        color: white;
-        padding: 0px 20px 0px 0px;
-    }
+.signUpForm label {
+    color: white;
+    padding: 0px 20px 0px 0px;
+}
 
-    .signUpButton {
-        border: none;
-        background: white;
-        width: 10vw;
-        border-radius: 10px;
-        height: 5vh;
-        pointer-events: none;
-    }
+.signUpButton {
+    border: none;
+    background: white;
+    width: 10vw;
+    border-radius: 10px;
+    height: 5vh;
+    pointer-events: none;
+}
 
-    .signUpForm input[type=text] {
-        color: #4c4c4c40;
-        pointer-events: none;
-    }
+.signUpForm input[type=text] {
+    color: #4c4c4c40;
+    pointer-events: none;
+}
 
-    .signUpForm input[type=text]:focus-visible {
-        border: none;
-        background: #dcbbfa;
-        color: white;
-    }
+.signUpForm input[type=text]:focus-visible {
+    border: none;
+    background: #dcbbfa;
+    color: white;
+}
 
 
 .homeButton {
@@ -182,8 +315,8 @@ section {
     box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
     margin: 20px;
     border-radius: 10px;
-    font-size:20px;
-    color:white;
+    font-size: 20px;
+    color: white;
 }
 
 
@@ -191,24 +324,28 @@ section {
     font-size: 30px;
     font-family: "Baloo-Regular", sans-serif;
     color: #fff;
-    margin: 0px 0px 20px 20px;
-    padding: 20px;
-    background: #777af5;
-    box-shadow: rgb(46 59 240 / 72%) 0px 7px, rgb(255 255 255 / 0%) 0px 10px;
-    border-radius: 0px 0px 15px 15px;
 }
 
+.menuIcon {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 30px;
+    font-family: "Baloo-Regular", sans-serif;
+    color: #fff;
+}
+
+
 .whiteText {
-    font-size:25px;
-    color:#fff;
+    font-size: 25px;
+    color: #fff;
 }
 
 .welcomeTitle {
-    text-shadow:rgb(46 59 240 / 62%) 0px 7px, rgb(255 255 255 / 50%) 0px 10px;
-    font-size:80px;
-    color:white;
+    text-shadow: rgb(46 59 240 / 62%) 0px 7px, rgb(255 255 255 / 50%) 0px 10px;
+    font-size: 80px;
+    color: white;
     font-family: "Baloo-Regular", sans-serif;
-    MARGIN-top:100px;
+    MARGIN-top: 100px;
 }
 
 .banner {
@@ -250,6 +387,15 @@ a:-webkit-any-link {
 
 @media only screen and (max-width: 768px) {
 
+    .mobNone {
+        display: none;
+        flex: 0 !important;
+    }
+
+    header {
+        max-height: 200px;
+    }
+
     body {
         margin: 0px !important;
         overflow-x: hidden;
@@ -257,7 +403,7 @@ a:-webkit-any-link {
 
     .index {
         background-image: url(/images/backgroundPurple-mobile.gif);
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
         width: 100vw;
@@ -271,44 +417,62 @@ a:-webkit-any-link {
         height: 7vh;
         background: #777af5;
         border: none;
-        border-radius: 10px; }
+        border-radius: 10px;
+    }
 
-        .homepage {
-            background-image: url(/images/background-pink.gif);
-            background-size:cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100vw;
-        }
+    .titleBox {
+        flex: 3;
+        padding: 20px 10px !important;
+    }
 
-        .signUpForm {
-            width: 100vw;
-            height: auto;
-            background: #777af5;
-            border-radius: 10px;
-            display: block;
-            /* margin-top: 30px; */
-        }
+    #menu-container {
+        padding: 20px 10px !important;
+    }
 
-        .signUpButton {
-            width:50vw;
-        }
+    .title {
+        font-size: 26px;
+    }
 
-        .emailInput {
-            margin-top: 10px;
-        }
+    .show {
+        flex-wrap: wrap;
+    }
 
-        .welcomeTitle {
-            margin:0px;
-        }
+    .homepage {
+        background-image: url(/images/background-pink.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
 
-        .signUpForm label {
-            padding:0px;
-        }
+    .signUpForm {
+        width: 100vw;
+        height: auto;
+        background: #777af5;
+        border-radius: 10px;
+        display: block;
+        /* margin-top: 30px; */
+    }
 
-        .signUpForm input[type=text] {
-            text-align:center;
-        }
+    .signUpButton {
+        width: 50vw;
+    }
+
+    .emailInput {
+        margin-top: 10px;
+    }
+
+    .welcomeTitle {
+        margin: 0px;
+    }
+
+    .signUpForm label {
+        padding: 0px;
+    }
+
+    .signUpForm input[type=text] {
+        text-align: center;
+    }
 }
 
 

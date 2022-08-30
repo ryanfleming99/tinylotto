@@ -4,41 +4,67 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <link rel="script" href="app.js">
-    </head>
-    <body class="homepage">
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/34f56d6676.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script rel="script" src="/functions.js"></script>
+</head>
+
+<header id="header">
+    <div class="titleBox mobNone" id="titleBox">
+        <h2 class="title">TINY LOTTO</h2>
+    </div>
+
+    <div class="menu-container" id="menu-container">
+        <a href="#" class="menu-item"><i class="fas fa-house-user"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-paint-brush"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-layer-group"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-headset"></i></a>
+        <a href="#" class="menu-item"><i class="fas fa-id-card"></i></a>
+    </div>
+
+    <button class="titleBox" onclick="switchMenu()" id="menu">
+        <p class="menuIcon" id="menuText">Menu</p>
+    </button>
+</header>
+
+
+<body class="homepage">
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <div class="title">TL</div>
-            <p class="homepageTitle">TINY LOTTO</p>
-            <button class="menu">[=]</button>
-        </header>
-        <section>
-            <div class="card-container">
+    <section>
+        <!-- <div class="card-container">
                     <div class="card"><img class="cardImage" src="/images/BlackCard.webp"><p class="cardTitle">Black Diamond ETH</p> </div>
                     <div class="card"><img class="cardImage" src="/images/BlueCard.webp"><p class="cardTitle">Baby Blue Doge</p></div>
                     <div class="card"><img class="cardImage" src="/images/GoldCard.webp"><p class="cardTitle">Gold ETH</p></div>
                     <div class="card"><img class="cardImage" src="/images/BlackRedCard.webp"><p class="cardTitle">Blood ETH</p></div>
                     
-            </div>
-        </section>
+            </div> -->
+        <div class="center pad-100">
+            <h1>Concept Design</h1>
+            <p class="pad-100">The people who do the most in this world for others are those who are all around us.
+                We've decided to
+                Game-ify Tiny Heroes into a card game.</p>
+            <img src="/images/TinyLottoDesign.png?4" alt="Tiny lotto concept interface design" class="center lrg-img">
 
-           <!-- <section class="signUpSection">
+        </div>
+    </section>
+
+    <!-- <section class="signUpSection">
                     <form  class="signUpForm" action="/action_page.php">
                         <label for="Email">Email:</label><br>
                         <input class="emailInput" type="text" id="lname" name="lname" value="Sign up available soon!"><br><br>
                         <input class="signUpButton" type="submit" value="SUBMIT">
                       </form> 
-             </section> --> 
-        <script src="" async defer></script>
-    </body>
+             </section> -->
+    <script src="" async defer></script>
+</body>
+
 </html>
