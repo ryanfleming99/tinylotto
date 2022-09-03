@@ -43,6 +43,12 @@ p {
     pointer-events: none;
 }
 
+.btmBorder {
+    border-bottom: 5px solid white;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
 header,
 .header {
     width: 100vw;
@@ -105,6 +111,11 @@ div#menu-container {
     padding: 20px;
 }
 
+.menu-item:hover+.hide {
+    display: block;
+    color: white;
+    content: "bingbong";
+}
 
 i {
     padding: 10px;
@@ -117,7 +128,7 @@ i {
 
 i:hover {
     font-size: 24px;
-    color: #93bad5
+    transform: translateX(5px);
 }
 
 
@@ -145,6 +156,10 @@ i:hover {
     text-align: center;
 }
 
+.imageZoom {
+    width: 20vw;
+}
+
 .pad-100 {
     padding: 80px;
 }
@@ -157,6 +172,10 @@ i:hover {
     padding: 10px;
 }
 
+.pad-20 {
+    padding: 20px;
+}
+
 .pad-left {
     padding-left: 80px;
 }
@@ -166,7 +185,7 @@ i:hover {
 }
 
 .lrg-img {
-    width: 80vw;
+    width: 90vw;
     text-align: center;
 }
 
@@ -187,6 +206,7 @@ input,
 button,
 submit {
     border: none;
+    background: none;
 }
 
 .lowOpacity {
@@ -228,10 +248,7 @@ submit {
 }
 
 
-
-
-
-.card-container {
+#card-container {
     display: inline-block;
     width: 80vw;
     padding: 20px;
@@ -240,15 +257,14 @@ submit {
     height: auto;
 }
 
-.card {
-    width: 20%;
-    padding: 10px;
+#card {
+    width: 15vw;
     border-radius: 5px;
     display: inline-block;
-    margin: 20px;
+    margin: 30px 15px 15px 30px;
 }
 
-.cardImage {
+#cardImage {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -257,7 +273,7 @@ submit {
     filter: blur(2px)
 }
 
-.cardTitle {
+#cardTitle {
     font-family: "Baloo-Regular", sans-serif;
     font-size: 20px;
     padding: 20px 0;
@@ -327,7 +343,7 @@ submit {
 }
 
 
-.homeButton {
+#homeButton {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -487,6 +503,11 @@ a:-webkit-any-link {
 
     .show {
         flex-wrap: wrap;
+    }
+
+    #card {
+        width: 25vw;
+        margin: 0px;
     }
 
     .homepage {

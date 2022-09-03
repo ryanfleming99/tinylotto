@@ -48,3 +48,11 @@ function switchMenu() {
 
 }
 /* menuText.innerHTML ? menuText.innerHTML = "close" : menuText.innerHTML = "menu"; */
+
+
+
+function btnClick() {
+    let btn = document.getElementById("homeButton");
+    btn.style.opacity = "0.9";
+    console.log("btn worked");
+}
