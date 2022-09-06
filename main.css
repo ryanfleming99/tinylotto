@@ -126,7 +126,10 @@ i {
     color: #fff;
 }
 
-
+i:hover {
+    font-size: 24px;
+    transform: translateX(5px);
+}
 
 
 .left {
@@ -240,7 +243,7 @@ submit {
     color: initial;
     border-style: none;
     padding: 20px 15px;
-    flex: inherit;
+    flex: 1;
     background: #777af5;
 }
 
@@ -363,41 +366,12 @@ submit {
     top: 5px;
 }
 
-.unique {
-    display: inline-block;
-    max-width: 20vw;
-    margin: 0 20px;
-}
-
-.whiteNameTag {
-    text-align: center;
-    max-width: 100%;
-    padding: 10px 20px;
-    font-family: "Baloo-Regular", sans-serif;
-    color: rgb(255, 255, 255);
-}
-
 
 .title {
     font-size: 30px;
     font-family: "Baloo-Regular", sans-serif;
     color: #fff;
 }
-
-.titleHover {
-    font-size: 30px;
-    font-family: "Baloo-Regular", sans-serif;
-    color: #fff;
-}
-
-.titleHover:hover:after {
-    content: "subscribe to our mailing list and get an exclusive card skin design!";
-    display: content;
-    font-size: 24px;
-    font-family: "Baloo-Regular", sans-serif;
-    color: #fff;
-}
-
 
 .menuIcon {
     text-align: right;
@@ -428,7 +402,6 @@ submit {
 
 a:-webkit-any-link {
     text-decoration: none;
-    overflow-x: clip;
 }
 
 .hover-color {
@@ -455,14 +428,7 @@ a:-webkit-any-link {
 
 /* IPAD STYLING */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .unique {
-        display: inline-block;
-        max-width: 40vw;
-        margin: 0 20px;
-    }
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
 /* MOBILE STYLING */
 
@@ -537,12 +503,6 @@ a:-webkit-any-link {
 
     .show {
         flex-wrap: wrap;
-    }
-
-    .unique {
-        display: inline-block;
-        max-width: 100vw;
-        margin-bottom: 30px;
     }
 
     #card {
